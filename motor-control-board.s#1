@@ -3198,7 +3198,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="C1" library="SparkFun-Capacitors" deviceset="0.1UF-16V(+-10%)(0402)" device="" value="0.1uF"/>
 <part name="U1" library="SparkFun-PowerIC" deviceset="DRV8830" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
-<part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402" value="0.22"/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
@@ -3267,7 +3267,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="C1" gate="G$1" x="-30.48" y="68.58"/>
 <instance part="U1" gate="G$1" x="7.62" y="66.04"/>
 <instance part="SUPPLY2" gate="G$1" x="-12.7" y="78.74"/>
-<instance part="GND4" gate="1" x="-20.32" y="55.88"/>
+<instance part="GND" gate="1" x="-20.32" y="55.88"/>
 <instance part="GND5" gate="1" x="20.32" y="48.26"/>
 <instance part="R2" gate="G$1" x="25.4" y="66.04"/>
 <instance part="SUPPLY3" gate="G$1" x="60.96" y="76.2"/>
@@ -3521,6 +3521,28 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="48.26" y1="-43.18" x2="50.8" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="A1"/>
+<wire x1="86.36" y1="60.96" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="60.96" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="U2" gate="G$1" pin="A0"/>
+<wire x1="-5.08" y1="12.7" x2="-20.32" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="12.7" x2="-20.32" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="A1"/>
+<wire x1="-5.08" y1="60.96" x2="-20.32" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="60.96" x2="-20.32" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="GND" gate="1" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="A0"/>
+<wire x1="-5.08" y1="63.5" x2="-20.32" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="63.5" x2="-20.32" y2="60.96" width="0.1524" layer="91"/>
+<junction x="-20.32" y="60.96"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -3584,30 +3606,6 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pinref part="JP1" gate="G$1" pin="3"/>
 <wire x1="27.94" y1="-73.66" x2="30.48" y2="-73.66" width="0.1524" layer="91"/>
 <label x="30.48" y="-73.66" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="U2" gate="G$1" pin="A0"/>
-<wire x1="-5.08" y1="12.7" x2="-20.32" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="12.7" x2="-20.32" y2="7.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="A1"/>
-<wire x1="-5.08" y1="60.96" x2="-20.32" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="60.96" x2="-20.32" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="U1" gate="G$1" pin="A0"/>
-<wire x1="-5.08" y1="63.5" x2="-20.32" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="63.5" x2="-20.32" y2="60.96" width="0.1524" layer="91"/>
-<junction x="-20.32" y="60.96"/>
-</segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="A1"/>
-<wire x1="86.36" y1="60.96" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="60.96" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$4" class="0">
